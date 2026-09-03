@@ -10,34 +10,33 @@
 
     <nav class="navbar">
       <div class="navbox">
-        <div class="ok" >
+        <div class="nav-con" >
             <img id = "imgbox" src="logo.png"  alt="image"> 
-            <h4>Machine Learning Center of Excellence</h4>
-        </div>
+            <h4 style="display: flex;">Machine Learning<br> Center of Excellence</h4>
         <ul>
-            <li>
-                <li><a href="#">Contact</a></li>
+                <li id ="imgcont" ><a href="#"><h5 style ="color:white;">Contact</h5></a></li>
         </ul>
-      </div>
     </nav>
 </header>
 <body>
     <main>
         <div class="container">
-        <div class="box1"> <h1>The tuning<br> Test <br> '2026 </h1>
+        <div class="box1">
+            <p style="color: rgb(60, 60, 151);">Present</p>
+            <h1>The tuning<br> Test <br> '2026 </h1>
         <br><br>
-    <p> Where human integritiy meets Machine logic <br><br> <span style="color:rgb(234, 57, 160)">Domains </span></p>
+    <p> Where human integritiy meets Machine logic <br><br> <span style="color:rgb(212, 93, 163)">Domains </span></p>
     <br>
     <div class="small">
-       <h4>Machine Learning</h4>
+       <h4 style="font-size: 0.9rem;">Machine Learning</h4>
     </div>
      <br>
      <div class="small">
-        <h4> Web Development </h4>
+        <h4 style="font-size: 0.9rem;"> Web Development </h4>
      </div>
      <br>
      <div class="small">
-       <h4>Designity</h4>
+       <h4 style="font-size: 0.9rem;">Designity</h4>
      </div>
      <br><br>
      <span style ="color :rgb(83, 140, 238)">Date</span>
@@ -51,101 +50,258 @@
      <br>
      <span ></span>
 </div>
-        <div class="box2">
-            <h1 id="top" style = "color: white">MLCOE RECRUITMENT<br>EGISTRATION </h1>
-            <p > initiate your sequance to join tghe machine learning center of<br> excellence</p>
+<div class="box2">
 
-            <form>
-                <div class="cont">
-                <div class="first">
-                    <label   for="fullname">Full name</label>
-                    <input type="'text" id ="fullname" placeholder="Enter your name" >
-                    <label style ="color:white" for="number">Student number</label>
-                    <input type ="number" id="number" placeholder="Enter your student number">
-                </div> <br><br>
+    <h1 id="top">
+        MLCOE RECRUITMENT<br>
+        REGISTRATION
+    </h1>
 
-                <div class ="first">
-                   <label >Roll no.</label>
-                    <input type ="number" id="rollno" placeholder="Enter your roll no. number">  
-                   <label for ="mail">College email</label>
-                    <input type ="number" id="mail" placeholder="Enter your college email">
-                    </div><br><br>
+    <p class="intro">
+        Initiate your sequence to join the Machine Learning Center of
+        Excellence.
+    </p>
 
-                    <div class="first">  
-                   <label  for="phone">phone no.</label>
-                    <input type ="number" id="phone" placeholder="Enter your phone number">  
-                   <label for="number">Roll no.</label>
-                    <input type ="number" id="rollno" placeholder="Enter your roll no. number">  
-                </div><br><br>
+    <form>
 
-                <div class="first">
-                    <label>Date of birth </label>
-                    <input type="date">
-                    <label>Branch :</label>
-                    <select>
+        <!-- NAME + STUDENT NUMBER -->
+        <div class="cont">
+
+            <div class="first">
+
+                <div class="field">
+                    <label for="fullname">FULL NAME</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        placeholder=""
+                    >
+                </div>
+
+                <div class="field">
+                    <label for="number">STUDENT NUMBER</label>
+                    <input
+                        type="text"
+                        id="number"
+                        placeholder=""
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- ROLL NUMBER + EMAIL -->
+            <div class="first">
+
+                <div class="field">
+                    <label for="rollno">ROLL NUMBER</label>
+                    <input
+                        type="text"
+                        id="rollno"
+                        placeholder=""
+                    >
+                </div>
+
+                <div class="field">
+                    <label for="mail">COLLEGE EMAIL</label>
+                    <input
+                        type="email"
+                        id="mail"
+                        placeholder=""
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- PHONE + GENDER -->
+            <div class="first">
+
+                <div class="field">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder=""
+                    >
+                </div>
+
+                <div class="field">
+                    <label>GENDER</label>
+
+                    <div class="gender">
+
+                        <label class="gender-box">
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Male"
+                            >
+                            Male
+                        </label>
+
+                        <label class="gender-box">
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Female"
+                            >
+                            Female
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- DOB + BRANCH + RESIDENCE -->
+            <div class="fourth">
+
+                <div class="field">
+                    <label for="dob">DATE OF BIRTH</label>
+                    <input
+                        type="date"
+                        id="dob"
+                    >
+                </div>
+
+
+                <div class="field">
+                    <label for="branch">BRANCH</label>
+
+                    <select id="branch">
                         <option>CSE</option>
-                         <option>ECE</option>
-                          <option>IT</option>
-                           <option>CSE-AIML</option>
-                            <option>CSE-DS</option>
-                             <option>CS-IT</option>
+                        <option>ECE</option>
+                        <option>IT</option>
+                        <option>CSE-AIML</option>
+                        <option>CSE-DS</option>
+                        <option>CS-IT</option>
                     </select>
-                    <label>Residence</label>
-                     <label for="day">Dayscholor</label>
-                    <input type ="radio" id="day" name ="residence" value ="Day Scholor"> 
-                      <label for="hostel">Hosteller</label>
-                    <input type ="radio" id="hostel" name ="residence" value ="Hosteller">  
-                    </div><br><br>
-                    <!-- <div>
-                        <label>Domain Applying for:</label>
-                    <select>
-                        <option>Machine Learning</option>
-                         <option>WEb-Development</option>
-                          <option>Designer</option> -->
-                           <!-- <label>Domain Applying for</label> -->
-                    <p> Domain Applying For :</p>
-                    <br><br>
-                    <div>
-                     <label for="day">Machine Learning</label>
-                     <div>
-                    <input type ="radio" id="day" name ="residence" value ="Machine_learning"> 
-                    </div>
-                      <label for="hostel">WEb-development</label>
-                      <div>
-                    <input type ="radio" id="hostel" name ="residence" value ="Web-Development"> 
-                    </div>
-                      <label for="hostel">Designer</label>
-                      <div>
-                    <input type ="radio" id="hostel" name ="residence" value ="Designer">  
-                    </div> 
-                    </div><br><br>
-                     <div class="disclaimer-text">
-                     <label>
-                            <input type ="checkbox">
-                                <p>
-                                    I hereby declare that all the information provided above is true
-                                    to the best of my knowledge and I agree to abide by the rules and
-                                    regulations of AKGEC.
-                                </p>
-                       </label>
-                    </div><br><br>
-                    <div>
-                        <button type="submit"> Submit</button>
-                    </div>
-               </div>
-               <br><br>
-               <footer>
-                <p> System ready| Initiative proxy | Security Encrypted</p>
-               </footer>
-            </form>
+                </div>
+
+
+                <div class="field">
+                    <label for="residence">RESIDENCE</label>
+
+                    <select id="residence">
+                        <option>Day Scholar</option>
+                        <option>Hosteller</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <!-- DOMAIN -->
+            <div class="domain-section">
+
+                <p class="domain-title">
+                    DOMAIN APPLYING FOR
+                </p>
+
+
+                <div class="domain-boxes">
+
+                    <label class="small">
+                        <input
+                            type="radio"
+                            name="domain"
+                            value="Machine Learning"
+                        >
+
+                        <span class="domain-icon">◯</span>
+
+                        <span>
+                            MACHINE<br>
+                            LEARNING
+                        </span>
+                    </label>
+
+
+                    <label class="small">
+                        <input
+                            type="radio"
+                            name="domain"
+                            value="Web Development"
+                        >
+
+                        <span class="domain-icon"></span>
+
+                        <span>
+                            WEB<br>
+                            DEVELOPMENT
+                        </span>
+                    </label>
+
+
+                    <label class="small">
+                        <input
+                            type="radio"
+                            name="domain"
+                            value="Designer"
+                        >
+
+                        <span class="domain-icon">⌁</span>
+
+                        <span>
+                            DESIGNING
+                        </span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- DISCLAIMER -->
+            <div class="disclaimer-text">
+
+                <input
+                    type="checkbox"
+                    id="agree"
+                    required
+                >
+
+                <label for="agree">
+                    I hereby declare that all the information provided above
+                    is true to the best of my knowledge and I agree to abide
+                    by the rules and regulations of AKGEC.
+                </label>
+
+            </div>
+
+
+            <!-- SUBMIT BUTTON -->
+            <div class="subb">
+
+                <button type="submit">
+                    REGISTER NOW; →
+                </button>
+
+            </div>
+
+
+            <!-- FOOTER -->
+            <footer>
+                <p>
+                    SYSTEM READY | INITIATING PROXY | SECURITY ENCRYPTED
+                </p>
+            </footer>
+
         </div>
+
+    </form>
+
+</div>
     </main> 
 </body>
 <footer id="footer">
-    <H6> MLCOE NEURAK ENGINE</H6>
+    <H4> <span style="gap: 6%;">MLCOE NEURAL ENGINE </span></H4>
     <div>
-        <p> jhebfwiuer ihfiervbi ififvbibeur</p>
+        <p style="row-gap: 2rem; padding-bottom: 1%; grid-row: 1rem; color: rgb(89, 154, 216); row-gap: 2px;"> ETHICS  PROTOCOL  NEURAL PRIVACY  SYSTEM LOGS</p>
     </div>
-   <p>rgigbfvyrg iuhfbir iwqdyiwgvwbhioebfrqgbgvrnrugfq3oyfbbgvurgrh<br> uhrh4ugfhr4gu4bff</p>
+   <p style ="font-size: 0.9rem;">@2026 MLCOE  Advancing human potential through machine logic </p>
+   <p style="font-size:0.7rem; margin-top: 0.8px; margin-bottom: 1.2rem;">All sequences are logical for verification</p>
 </footer>
 </html>
